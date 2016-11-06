@@ -1,1 +1,4 @@
-# unm_cs427_prolog-nlp
+# Prolog Natural Language Programming
+
+UNM CS 247
+Fall 2016

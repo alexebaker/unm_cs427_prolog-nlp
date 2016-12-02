@@ -1,5 +1,6 @@
 utterance(Prob, X) :-
     sentence(Prob, X, [ ]).
+
 sentence(Prob, Start, End) :-
     nounphrase(P1, Start, Rest),
     verbphrase(P2, Rest, End),
@@ -7,21 +8,21 @@ sentence(Prob, Start, End) :-
     Prob is P*P1*P2.
 
 nounphrase(Prob, [Noun | End], End) :-
-    noun(P1, Noun),
+    noun(P1, Noun, _),
     pr(r2, P),
     Prob is P*P1.
 nounphrase(Prob, [Article, Noun | End], End) :-
-    article(P1, Article),
-    noun(P2, Noun),
+    article(P1, Article, _),
+    noun(P2, Noun, _),
     pr(r3, P),
     Prob is P*P1*P2.
 
 verbphrase(Prob, [Verb | End], End) :-
-    verb(P1, Verb),
+    verb(P1, Verb, _),
     pr(r4, P),
     Prob is P*P1.
 verbphrase(Prob, [Verb | Rest], End) :-
-    verb(P1, Verb),
+    verb(P1, Verb, _),
     nounphrase(P2, Rest, End),
     pr(r5, P),
     Prob is P*P1*P2.

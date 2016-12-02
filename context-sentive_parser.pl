@@ -1,20 +1,45 @@
 utterance(X) :-
     sentence(X, [ ]).
+
 sentence(Start, End) :-
     nounphrase(Start, Rest, Number),
     verbphrase(Rest, End, Number).
 
 nounphrase([Noun | End], End, Number) :-
-    noun(Noun, Number).
-nounphrase([Article, Noun | End], End, Number) :-
-    noun(Noun, Number),
-    article(Article, Number).
+    noun(_, Noun, Number).
 nounphrase([Noun | Rest], End, Number) :-
-    nounphrase(Noun, Rest, Number),
+    noun(_, Noun, Number),
+    nounphrase(Rest, End, Number).
+nounphrase([Article | Rest], End, Number) :-
+    article(_, Article, Number),
+    nounphrase(Rest, End, Number).
+nounphrase(Start, End, Number) :-
+    adjectivephrase(Start, Rest),
     nounphrase(Rest, End, Number).
 
 verbphrase([Verb | End], End, Number) :-
-    verb(Verb, Number).
+    verb(_, Verb, Number).
 verbphrase([Verb | Rest], End, Number) :-
-    verb(Verb, Number),
+    verb(_, Verb, Number),
     nounphrase(Rest, End, _).
+verbphrase([Adverb | Rest], End, Number) :-
+    adverb(_, Adverb),
+    verbphrase(Rest, End, Number).
+verbphrase([Verb | Rest], End, Number) :-
+    verb(_, Verb, Number),
+    adverbphrase(Rest, End).
+
+adjectivephrase([Adjective | End], End) :-
+    adjective(_, Adjective).
+adjectivephrase([Adjective | Rest], End) :-
+    adjective(_, Adjective),
+    adjectivephrase(Rest, End).
+adjectivephrase(Start, End) :-
+    adverbphrase(Start, Rest),
+    adjectivephrase(Rest, End).
+
+adverbphrase([Adverb | End], End) :-
+    adverb(_, Adverb).
+adverbphrase([Adverb | Rest], End) :-
+    adverb(_, Adverb),
+    adverbphrase(Rest, End).

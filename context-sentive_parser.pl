@@ -13,9 +13,12 @@ nounphrase([Noun | Rest], End, Number) :-
 nounphrase([Article | Rest], End, Number) :-
     article(_, Article, Number),
     nounphrase(Rest, End, Number).
-nounphrase(Start, End, Number) :-
-    adjectivephrase(Start, Rest),
+nounphrase([Adjective | Rest], End, Number) :-
+    adjective(_, Adjective),
     nounphrase(Rest, End, Number).
+nounphrase([Preposition | Rest], End, Number) :-
+    preposition(_, Preposition),
+    nounphrase(Rest, End, _).
 
 verbphrase([Verb | End], End, Number) :-
     verb(_, Verb, Number).
@@ -43,3 +46,10 @@ adverbphrase([Adverb | End], End) :-
 adverbphrase([Adverb | Rest], End) :-
     adverb(_, Adverb),
     adverbphrase(Rest, End).
+
+prepositionalphrase([Preposition | Rest], End) :-
+    preposition(_, Preposition),
+    nounphrase(Rest, End, _).
+prepositionalphrase([Preposition | Rest], End) :-
+    preposition(_, Preposition),
+    prepositionalphrase(Rest, End).

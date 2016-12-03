@@ -89,7 +89,7 @@ noun(0.01333333, insects, plural).
 noun(0.01333333, lizard, singular).
 noun(0.01333333, izards, plural).
 noun(0.01333333, illuminati, plural).
-noun(0.01333333, all, singular).
+noun(0.01333333, wall, singular).
 noun(0.01333333, walls, plural).
 noun(0.01333333, border, singular).
 noun(0.01333333, borders, plural).
@@ -145,3 +145,82 @@ adverb(0.2, terribly).
 adverb(0.2, eloquently).
 adverb(0.2, stupidly).
 adverb(0.2, illegally).
+
+preposition(0.01428571, aboard).
+preposition(0.01428571, about).
+preposition(0.01428571, above).
+preposition(0.01428571, across).
+preposition(0.01428571, after).
+preposition(0.01428571, against).
+preposition(0.01428571, along).
+preposition(0.01428571, amid).
+preposition(0.01428571, among).
+preposition(0.01428571, anti).
+preposition(0.01428571, around).
+preposition(0.01428571, as).
+preposition(0.01428571, at).
+preposition(0.01428571, before).
+preposition(0.01428571, behind).
+preposition(0.01428571, below).
+preposition(0.01428571, beneath).
+preposition(0.01428571, beside).
+preposition(0.01428571, besides).
+preposition(0.01428571, between).
+preposition(0.01428571, beyond).
+preposition(0.01428571, but).
+preposition(0.01428571, by).
+preposition(0.01428571, concerning).
+preposition(0.01428571, considering).
+preposition(0.01428571, despite).
+preposition(0.01428571, down).
+preposition(0.01428571, during).
+preposition(0.01428571, except).
+preposition(0.01428571, excepting).
+preposition(0.01428571, excluding).
+preposition(0.01428571, following).
+preposition(0.01428571, for).
+preposition(0.01428571, from).
+preposition(0.01428571, in).
+preposition(0.01428571, inside).
+preposition(0.01428571, into).
+preposition(0.01428571, like).
+preposition(0.01428571, minus).
+preposition(0.01428571, near).
+preposition(0.01428571, of).
+preposition(0.01428571, off).
+preposition(0.01428571, on).
+preposition(0.01428571, onto).
+preposition(0.01428571, opposite).
+preposition(0.01428571, outside).
+preposition(0.01428571, over).
+preposition(0.01428571, past).
+preposition(0.01428571, per).
+preposition(0.01428571, plus).
+preposition(0.01428571, regarding).
+preposition(0.01428571, round).
+preposition(0.01428571, save).
+preposition(0.01428571, since).
+preposition(0.01428571, than).
+preposition(0.01428571, through).
+preposition(0.01428571, to).
+preposition(0.01428571, toward).
+preposition(0.01428571, towards).
+preposition(0.01428571, under).
+preposition(0.01428571, underneath).
+preposition(0.01428571, unlike).
+preposition(0.01428571, until).
+preposition(0.01428571, up).
+preposition(0.01428571, upon).
+preposition(0.01428571, versus).
+preposition(0.01428571, via).
+preposition(0.01428571, with).
+preposition(0.01428571, within).
+preposition(0.01428571, without).
+
+conjunction(0.14285714, for).
+conjunction(0.14285714, and).
+conjunction(0.14285714, nor).
+conjunction(0.14285714, but).
+conjunction(0.14285714, or).
+conjunction(0.14285714, yet).
+conjunction(0.14285714, so).

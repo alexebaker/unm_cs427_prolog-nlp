@@ -87,7 +87,7 @@ noun(0.01333333, planes, plural).
 noun(0.01333333, insect, singular).
 noun(0.01333333, insects, plural).
 noun(0.01333333, lizard, singular).
-noun(0.01333333, izards, plural).
+noun(0.01333333, lizards, plural).
 noun(0.01333333, illuminati, plural).
 noun(0.01333333, wall, singular).
 noun(0.01333333, walls, plural).

@@ -1,0 +1,242 @@
+[trace]  ?- utterance([aliens, exist, under, the, flat, earth]).
+   Call: (7) utterance([aliens, exist, under, the, flat, earth]) ? creep
+   Call: (8) sentence([aliens, exist, under, the, flat, earth], []) ? creep
+   Call: (9) nounphrase([aliens, exist, under, the, flat, earth], _G2442, _G2443) ? creep
+   Call: (10) noun(_G2441, aliens, _G2443) ? creep
+   Exit: (10) noun(0.01333333, aliens, plural) ? creep
+   Exit: (9) nounphrase([aliens, exist, under, the, flat, earth], [exist, under, the, flat, earth], plural) ? creep
+   Call: (9) verbphrase([exist, under, the, flat, earth], [], plural) ? creep
+   Call: (10) verb(_G2444, exist, plural) ? creep
+   Exit: (10) verb(0.02631579, exist, plural) ? creep
+   Call: (10) nounphrase([under, the, flat, earth], [], _G2449) ? creep
+   Call: (11) noun(_G2447, under, _G2449) ? creep
+   Fail: (11) noun(_G2447, under, _G2449) ? creep
+   Redo: (10) nounphrase([under, the, flat, earth], [], _G2449) ? creep
+   Call: (11) article(_G2447, under, _G2449) ? creep
+   Fail: (11) article(_G2447, under, _G2449) ? creep
+   Redo: (10) nounphrase([under, the, flat, earth], [], _G2449) ? creep
+   Call: (11) adjective(_G2447, under) ? creep
+   Fail: (11) adjective(_G2447, under) ? creep
+   Redo: (10) nounphrase([under, the, flat, earth], [], _G2449) ? creep
+   Call: (11) preposition(_G2447, under) ? creep
+   Exit: (11) preposition(0.01428571, under) ? creep
+   Call: (11) nounphrase([the, flat, earth], [], _G2452) ? creep
+   Call: (12) noun(_G2450, the, _G2452) ? creep
+   Fail: (12) noun(_G2450, the, _G2452) ? creep
+   Redo: (11) nounphrase([the, flat, earth], [], _G2452) ? creep
+   Call: (12) article(_G2450, the, _G2452) ? creep
+   Exit: (12) article(0.16666667, the, singular) ? creep
+   Call: (12) nounphrase([flat, earth], [], _G2455) ? creep
+   Call: (13) noun(_G2453, flat, _G2455) ? creep
+   Fail: (13) noun(_G2453, flat, _G2455) ? creep
+   Redo: (12) nounphrase([flat, earth], [], _G2455) ? creep
+   Call: (13) article(_G2453, flat, _G2455) ? creep
+   Fail: (13) article(_G2453, flat, _G2455) ? creep
+   Redo: (12) nounphrase([flat, earth], [], _G2455) ? creep
+   Call: (13) adjective(_G2453, flat) ? creep
+   Exit: (13) adjective(0.05263158, flat) ? creep
+   Call: (13) nounphrase([earth], [], _G2458) ? creep
+   Call: (14) noun(_G2456, earth, _G2458) ? creep
+   Exit: (14) noun(0.01333333, earth, singular) ? creep
+   Exit: (13) nounphrase([earth], [], singular) ? creep
+   Exit: (12) nounphrase([flat, earth], [], _G2461) ? creep
+   Exit: (11) nounphrase([the, flat, earth], [], singular) ? creep
+   Exit: (10) nounphrase([under, the, flat, earth], [], _G2461) ? creep
+   Exit: (9) verbphrase([exist, under, the, flat, earth], [], plural) ? creep
+   Exit: (8) sentence([aliens, exist, under, the, flat, earth], []) ? creep
+   Exit: (7) utterance([aliens, exist, under, the, flat, earth]) ? creep
+true .
+
+
+[trace]  ?- utterance([black, helicopters, are, terribly, real]).
+   Call: (7) utterance([black, helicopters, are, terribly, real]) ? creep
+   Call: (8) sentence([black, helicopters, are, terribly, real], []) ? creep
+   Call: (9) nounphrase([black, helicopters, are, terribly, real], _G2436, _G2437) ? creep
+   Call: (10) noun(_G2435, black, _G2437) ? creep
+   Fail: (10) noun(_G2435, black, _G2437) ? creep
+   Redo: (9) nounphrase([black, helicopters, are, terribly, real], _G2436, _G2437) ? creep
+   Call: (10) noun(_G2435, black, _G2437) ? creep
+   Fail: (10) noun(_G2435, black, _G2437) ? creep
+   Redo: (9) nounphrase([black, helicopters, are, terribly, real], _G2436, _G2437) ? creep
+   Call: (10) article(_G2435, black, _G2437) ? creep
+   Fail: (10) article(_G2435, black, _G2437) ? creep
+   Redo: (9) nounphrase([black, helicopters, are, terribly, real], _G2436, _G2437) ? creep
+   Call: (10) adjective(_G2435, black) ? creep
+   Exit: (10) adjective(0.05263158, black) ? creep
+   Call: (10) nounphrase([helicopters, are, terribly, real], _G2439, _G2440) ? creep
+   Call: (11) noun(_G2438, helicopters, _G2440) ? creep
+   Exit: (11) noun(0.01333333, helicopters, plural) ? creep
+   Exit: (10) nounphrase([helicopters, are, terribly, real], [are, terribly, real], plural) ? creep
+   Exit: (9) nounphrase([black, helicopters, are, terribly, real], [are, terribly, real], _G2443) ? creep
+   Call: (9) verbphrase([are, terribly, real], [], _G2443) ? creep
+   Call: (10) verb(_G2441, are, _G2443) ? creep
+   Exit: (10) verb(0.02631579, are, plural) ? creep
+   Call: (10) nounphrase([terribly, real], [], _G2446) ? creep
+   Call: (11) noun(_G2444, terribly, _G2446) ? creep
+   Fail: (11) noun(_G2444, terribly, _G2446) ? creep
+   Redo: (10) nounphrase([terribly, real], [], _G2446) ? creep
+   Call: (11) article(_G2444, terribly, _G2446) ? creep
+   Fail: (11) article(_G2444, terribly, _G2446) ? creep
+   Redo: (10) nounphrase([terribly, real], [], _G2446) ? creep
+   Call: (11) adjective(_G2444, terribly) ? creep
+   Fail: (11) adjective(_G2444, terribly) ? creep
+   Redo: (10) nounphrase([terribly, real], [], _G2446) ? creep
+   Call: (11) preposition(_G2444, terribly) ? creep
+   Fail: (11) preposition(_G2444, terribly) ? creep
+   Redo: (10) nounphrase([terribly, real], [], _G2446) ? creep
+   Call: (11) conjunction(_G2444, terribly) ? creep
+   Fail: (11) conjunction(_G2444, terribly) ? creep
+   Redo: (10) nounphrase([terribly, real], [], _G2446) ? creep
+   Call: (11) noun(_G2444, terribly, _G2446) ? creep
+   Fail: (11) noun(_G2444, terribly, _G2446) ? creep
+   Fail: (10) nounphrase([terribly, real], [], _G2446) ? creep
+   Redo: (9) verbphrase([are, terribly, real], [], _G2443) ? creep
+   Call: (10) adverb(_G2441, are) ? creep
+   Fail: (10) adverb(_G2441, are) ? creep
+   Redo: (9) verbphrase([are, terribly, real], [], _G2443) ? creep
+   Call: (10) verb(_G2441, are, _G2443) ? creep
+   Exit: (10) verb(0.02631579, are, plural) ? creep
+   Call: (10) adverbphrase([terribly, real], []) ? creep
+   Call: (11) adverb(_G2444, terribly) ? creep
+   Exit: (11) adverb(0.2, terribly) ? creep
+   Call: (11) adverbphrase([real], []) ? creep
+   Call: (12) adverb(_G2447, real) ? creep
+   Fail: (12) adverb(_G2447, real) ? creep
+   Redo: (11) adverbphrase([real], []) ? creep
+   Call: (12) adverb(_G2447, real) ? creep
+   Fail: (12) adverb(_G2447, real) ? creep
+   Redo: (11) adverbphrase([real], []) ? creep
+   Call: (12) conjunction(_G2447, real) ? creep
+   Fail: (12) conjunction(_G2447, real) ? creep
+   Redo: (11) adverbphrase([real], []) ? creep
+   Call: (12) adverb(_G2447, real) ? creep
+   Fail: (12) adverb(_G2447, real) ? creep
+   Fail: (11) adverbphrase([real], []) ? creep
+   Redo: (10) adverbphrase([terribly, real], []) ? creep
+   Call: (11) conjunction(_G2444, terribly) ? creep
+   Fail: (11) conjunction(_G2444, terribly) ? creep
+   Redo: (10) adverbphrase([terribly, real], []) ? creep
+   Call: (11) adverb(_G2444, terribly) ? creep
+   Exit: (11) adverb(0.2, terribly) ? creep
+   Call: (11) adjectivephrase([real], []) ? creep
+   Call: (12) adjective(_G2447, real) ? creep
+   Exit: (12) adjective(0.05263158, real) ? creep
+   Exit: (11) adjectivephrase([real], []) ? creep
+   Exit: (10) adverbphrase([terribly, real], []) ? creep
+   Exit: (9) verbphrase([are, terribly, real], [], plural) ? creep
+   Exit: (8) sentence([black, helicopters, are, terribly, real], []) ? creep
+   Exit: (7) utterance([black, helicopters, are, terribly, real]) ? creep
+true .
+
+
+[trace]  ?- utterance([trump, wants, a, great, great, wall]).
+   Call: (7) utterance([trump, wants, a, great, great, wall]) ? creep
+   Call: (8) sentence([trump, wants, a, great, great, wall], []) ? creep
+   Call: (9) nounphrase([trump, wants, a, great, great, wall], _G2579, _G2580) ? creep
+   Call: (10) noun(_G2578, trump, _G2580) ? creep
+   Exit: (10) noun(0.01333333, trump, singular) ? creep
+   Exit: (9) nounphrase([trump, wants, a, great, great, wall], [wants, a, great, great, wall], singular) ? creep
+   Call: (9) verbphrase([wants, a, great, great, wall], [], singular) ? creep
+   Call: (10) verb(_G2581, wants, singular) ? creep
+   Exit: (10) verb(0.02631579, wants, singular) ? creep
+   Call: (10) nounphrase([a, great, great, wall], [], _G2586) ? creep
+   Call: (11) noun(_G2584, a, _G2586) ? creep
+   Fail: (11) noun(_G2584, a, _G2586) ? creep
+   Redo: (10) nounphrase([a, great, great, wall], [], _G2586) ? creep
+   Call: (11) article(_G2584, a, _G2586) ? creep
+   Exit: (11) article(0.16666667, a, singular) ? creep
+   Call: (11) nounphrase([great, great, wall], [], _G2589) ? creep
+   Call: (12) noun(_G2587, great, _G2589) ? creep
+   Fail: (12) noun(_G2587, great, _G2589) ? creep
+   Redo: (11) nounphrase([great, great, wall], [], _G2589) ? creep
+   Call: (12) article(_G2587, great, _G2589) ? creep
+   Fail: (12) article(_G2587, great, _G2589) ? creep
+   Redo: (11) nounphrase([great, great, wall], [], _G2589) ? creep
+   Call: (12) adjective(_G2587, great) ? creep
+   Exit: (12) adjective(0.05263158, great) ? creep
+   Call: (12) nounphrase([great, wall], [], _G2592) ? creep
+   Call: (13) noun(_G2590, great, _G2592) ? creep
+   Fail: (13) noun(_G2590, great, _G2592) ? creep
+   Redo: (12) nounphrase([great, wall], [], _G2592) ? creep
+   Call: (13) article(_G2590, great, _G2592) ? creep
+   Fail: (13) article(_G2590, great, _G2592) ? creep
+   Redo: (12) nounphrase([great, wall], [], _G2592) ? creep
+   Call: (13) adjective(_G2590, great) ? creep
+   Exit: (13) adjective(0.05263158, great) ? creep
+   Call: (13) nounphrase([wall], [], _G2595) ? creep
+   Call: (14) noun(_G2593, wall, _G2595) ? creep
+   Exit: (14) noun(0.01333333, wall, singular) ? creep
+   Exit: (13) nounphrase([wall], [], singular) ? creep
+   Exit: (12) nounphrase([great, wall], [], _G2598) ? creep
+   Exit: (11) nounphrase([great, great, wall], [], _G2598) ? creep
+   Exit: (10) nounphrase([a, great, great, wall], [], singular) ? creep
+   Exit: (9) verbphrase([wants, a, great, great, wall], [], singular) ? creep
+   Exit: (8) sentence([trump, wants, a, great, great, wall], []) ? creep
+   Exit: (7) utterance([trump, wants, a, great, great, wall]) ? creep
+true .
+
+
+[trace]  ?- utterance([the, robot, scans, small, and, round, brains]).
+   Call: (7) utterance([the, robot, scans, small, and, round, brains]) ? creep
+   Call: (8) sentence([the, robot, scans, small, and, round, brains], []) ? creep
+   Call: (9) nounphrase([the, robot, scans, small, and, round, brains], _G2552, _G2553) ? creep
+   Call: (10) noun(_G2551, the, _G2553) ? creep
+   Fail: (10) noun(_G2551, the, _G2553) ? creep
+   Redo: (9) nounphrase([the, robot, scans, small, and, round, brains], _G2552, _G2553) ? creep
+   Call: (10) noun(_G2551, the, _G2553) ? creep
+   Fail: (10) noun(_G2551, the, _G2553) ? creep
+   Redo: (9) nounphrase([the, robot, scans, small, and, round, brains], _G2552, _G2553) ? creep
+   Call: (10) article(_G2551, the, _G2553) ? creep
+   Exit: (10) article(0.16666667, the, singular) ? creep
+   Call: (10) nounphrase([robot, scans, small, and, round, brains], _G2555, _G2556) ? creep
+   Call: (11) noun(_G2554, robot, _G2556) ? creep
+   Exit: (11) noun(0.01333333, robot, singular) ? creep
+   Exit: (10) nounphrase([robot, scans, small, and, round, brains], [scans, small, and, round, brains], singular) ? creep
+   Exit: (9) nounphrase([the, robot, scans, small, and, round, brains], [scans, small, and, round, brains], singular) ? creep
+   Call: (9) verbphrase([scans, small, and, round, brains], [], singular) ? creep
+   Call: (10) verb(_G2557, scans, singular) ? creep
+   Exit: (10) verb(0.02631579, scans, singular) ? creep
+   Call: (10) nounphrase([small, and, round, brains], [], _G2562) ? creep
+   Call: (11) noun(_G2560, small, _G2562) ? creep
+   Fail: (11) noun(_G2560, small, _G2562) ? creep
+   Redo: (10) nounphrase([small, and, round, brains], [], _G2562) ? creep
+   Call: (11) article(_G2560, small, _G2562) ? creep
+   Fail: (11) article(_G2560, small, _G2562) ? creep
+   Redo: (10) nounphrase([small, and, round, brains], [], _G2562) ? creep
+   Call: (11) adjective(_G2560, small) ? creep
+   Exit: (11) adjective(0.05263158, small) ? creep
+   Call: (11) nounphrase([and, round, brains], [], _G2565) ? creep
+   Call: (12) noun(_G2563, and, _G2565) ? creep
+   Fail: (12) noun(_G2563, and, _G2565) ? creep
+   Redo: (11) nounphrase([and, round, brains], [], _G2565) ? creep
+   Call: (12) article(_G2563, and, _G2565) ? creep
+   Fail: (12) article(_G2563, and, _G2565) ? creep
+   Redo: (11) nounphrase([and, round, brains], [], _G2565) ? creep
+   Call: (12) adjective(_G2563, and) ? creep
+   Fail: (12) adjective(_G2563, and) ? creep
+   Redo: (11) nounphrase([and, round, brains], [], _G2565) ? creep
+   Call: (12) preposition(_G2563, and) ? creep
+   Fail: (12) preposition(_G2563, and) ? creep
+   Redo: (11) nounphrase([and, round, brains], [], _G2565) ? creep
+   Call: (12) conjunction(_G2563, and) ? creep
+   Exit: (12) conjunction(0.14285714, and) ? creep
+   Call: (12) nounphrase([round, brains], [], _G2568) ? creep
+   Call: (13) noun(_G2566, round, _G2568) ? creep
+   Fail: (13) noun(_G2566, round, _G2568) ? creep
+   Redo: (12) nounphrase([round, brains], [], _G2568) ? creep
+   Call: (13) article(_G2566, round, _G2568) ? creep
+   Fail: (13) article(_G2566, round, _G2568) ? creep
+   Redo: (12) nounphrase([round, brains], [], _G2568) ? creep
+   Call: (13) adjective(_G2566, round) ? creep
+   Exit: (13) adjective(0.05263158, round) ? creep
+   Call: (13) nounphrase([brains], [], _G2571) ? creep
+   Call: (14) noun(_G2569, brains, _G2571) ? creep
+   Exit: (14) noun(0.01333333, brains, plural) ? creep
+   Exit: (13) nounphrase([brains], [], plural) ? creep
+   Exit: (12) nounphrase([round, brains], [], _G2574) ? creep
+   Exit: (11) nounphrase([and, round, brains], [], _G2574) ? creep
+   Exit: (10) nounphrase([small, and, round, brains], [], _G2574) ? creep
+   Exit: (9) verbphrase([scans, small, and, round, brains], [], singular) ? creep
+   Exit: (8) sentence([the, robot, scans, small, and, round, brains], []) ? creep
+   Exit: (7) utterance([the, robot, scans, small, and, round, brains]) ? creep
+true .

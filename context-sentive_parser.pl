@@ -61,6 +61,9 @@ adverbphrase([Adverb | Rest], End) :-
 adverbphrase([Conjunction | Rest], End) :-
     conjunction(_, Conjunction),
     adverbphrase(Rest, End).
+adverbphrase([Adverb | Rest], End) :-
+    adverb(_, Adverb),
+    adjectivephrase(Rest, End).
 
 prepositionalphrase([Preposition | Rest], End) :-
     preposition(_, Preposition),
